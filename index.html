@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>你的家乡 等你点亮</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            display: block;
+        }
+        nav ul li a:hover {
+            background-color: #555;
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 30px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        form input, form textarea {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        form button {
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        form button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>你的家乡 等你点亮</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#featured">精彩专题</a></li>
+            <li><a href="#map">点亮地图</a></li>
+            <li><a href="#submit">我要上首页</a></li>
+            <li><a href="#store">小卖部</a></li>
+            <li><a href="#challenge">BUG大挑战</a></li>
+            <li><a href="#products">更多产品</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="featured">
+            <h2>精彩专题</h2>
+            <p>中国象棋（重制版） - 老街</p>
+            <p>来自工程师 免费信息更新 - 下界之心</p>
+            <p>行业趋势（东方工作室） - 未能出现风波的象棋</p>
+            <p>综合模式 - 使命激活</p>
+        </section>
+        <section id="map">
+            <h2>点亮地图</h2>
+            <p>这里是点亮地图的内容。</p>
+        </section>
+        <section id="submit">
+            <h2>我要上首页</h2>
+            <form id="submit-form">
+                <input type="text" placeholder="你的名字" required>
+                <textarea placeholder="你的故事" rows="5" required></textarea>
+                <button type="submit">提交</button>
+            </form>
+        </section>
+        <section id="store">
+            <h2>小卖部</h2>
+            <p>这里是商店的内容。</p>
+        </section>
+        <section id="challenge">
+            <h2>BUG大挑战</h2>
+            <p>这里是BUG大挑战的内容。</p>
+        </section>
+        <section id="products">
+            <h2>更多产品</h2>
+            <ul>
+                <li>A 墨墨AI</li>
+                <li>B 墨墨打字</li>
+                <li>C 墨墨OJ</li>
+                <li>D 墨墨习题</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 你的家乡. All rights reserved.</p>
+    </footer>
+    <script>
+        // 处理投稿表单提交
+        document.getElementById('submit-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('感谢您的投稿！我们会尽快审核。');
+        });
+    </script>
+</body>
+</html>
